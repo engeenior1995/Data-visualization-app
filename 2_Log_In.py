@@ -74,7 +74,7 @@ with st.container():
                     time.sleep(1.5)
                     
                     # Redirect to home page
-                    st.switch_page("pages/3_🏠_Home.py")
+                    st.switch_page("pages/3_Home.py")
                 else:
                     st.markdown("""
                     <div class='error-box'>
@@ -100,12 +100,12 @@ with col2:
         st.session_state.logged_in = True
         st.session_state.username = "Guest User"
         st.success("Entering guest mode...")
-        st.switch_page("pages/3_🏠_Home.py")
+        st.switch_page("pages/3_Home.py")
 # Footer
 st.markdown("""
 <hr>
 <div style='text-align: center; color: #64748b; margin-top: 30px;'>
-    <p>Don't have an account? <a href='/1_📊_Sign_Up' target='_self'>Sign Up</a></p>
+    <p>Don't have an account? <a href='/1_Sign_Up' target='_self'>Sign Up</a></p>
     <p style='font-size: 12px;'>Developed by Muhammad Zarq Ali</p>
 </div>
 """, unsafe_allow_html=True)
