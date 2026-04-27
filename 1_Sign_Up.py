@@ -127,15 +127,15 @@ if st.session_state.signup_success:
     
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("🔐 Go to Login", use_container_width=True):
+        if st.button(" Go to Login", use_container_width=True):
             st.session_state.signup_success = False
-            st.switch_page("pages/2_🔐_Log_In.py")
+            st.switch_page("pages/2_Log_In.py")
     with col2:
         if st.button("🏠 Go to Home", use_container_width=True):
             st.session_state.signup_success = False
             st.session_state.logged_in = True
             st.session_state.username = st.session_state.new_user
-            st.switch_page("pages/3_🏠_Home.py")
+            st.switch_page("pages/3_Home.py")
     
     st.stop()
 
@@ -280,7 +280,7 @@ st.markdown("""
 st.markdown("""
 <hr>
 <div style='text-align: center; color: #64748b; margin-top: 30px;'>
-    <p>Already have an account? <a href='/2_🔐_Log_In' target='_self'>Log In</a></p>
+    <p>Already have an account? <a href='/2_Log_In' target='_self'>Log In</a></p>
     <p style='font-size: 12px;'>Developed by Muhammad Zarq Ali</p>
 </div>
 """, unsafe_allow_html=True)
