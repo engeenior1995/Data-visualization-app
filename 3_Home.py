@@ -49,7 +49,7 @@ if not st.session_state.logged_in:
     col1, col2 = st.columns(2)
     with col1:
         if st.button("🔐 Go to Login"):
-            st.switch_page("pages/2_Log_In.py")
+            st.switch_page("2_Log_In.py")
     with col2:
         if st.button("👤 Continue as Guest"):
             st.session_state.guest_mode = True
@@ -226,10 +226,10 @@ with st.sidebar:
             col1, col2 = st.columns(2)
             with col1:
                 if st.button("Sign Up", key="sidebar_signup", use_container_width=True):
-                    st.switch_page("pages/1_Sign_Up.py")
+                    st.switch_page("1_Sign_Up.py")
             with col2:
                 if st.button("Log In", key="sidebar_login", use_container_width=True):
-                    st.switch_page("pages/2_Log_In.py")
+                    st.switch_page("2_Log_In.py")
     
     if st.button("🚪 Logout", key="sidebar_logout", use_container_width=True):
         for key in ['logged_in', 'username', 'guest_mode']:
@@ -423,10 +423,10 @@ def create_chart_interface(df, is_guest=False):
             col1, col2 = st.columns(2)
             with col1:
                 if st.button("📝 Sign Up Now", use_container_width=True):
-                    st.switch_page("pages/1_📊_Sign_Up.py")
+                    st.switch_page("1_Sign_Up.py")
             with col2:
                 if st.button("🔐 Log In", use_container_width=True):
-                    st.switch_page("pages/2_Log_In.py")
+                    st.switch_page("2_Log_In.py")
             
             st.markdown("---")
             st.markdown("""
